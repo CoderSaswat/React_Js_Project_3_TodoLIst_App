@@ -1,4 +1,3 @@
-# React_Js_Project_3_TodoLIst_App
 # Technology Used
 React, React-Hooks, LocalStroage
 # Project Description
