@@ -1,0 +1,27 @@
+.c1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 339px;
+}
+.c2{
+    width: 349px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+.c4{
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2px;
+    font-weight: bold;
+}
