@@ -42,8 +42,13 @@ const App = () => {
     }
 
     const handleDeleteAll = (items) => {
-        items = [];
-        setItems([...items]);
+        if (items.length === 0) {
+            alert("You have no notes to delete");
+        }
+        else {
+            items = [];
+            setItems([...items]);
+        }
     }
 
     const handleEdit = (ele) => {
@@ -51,7 +56,7 @@ const App = () => {
         setElementToBeUpdated(ele);
         setEditingMode(true);
     }
-  
+
     const handleUpdate = () => {
         if (editingMode === true) {
             const index = items.indexOf(elementToBeUpdated);
@@ -64,9 +69,9 @@ const App = () => {
             alert("Click on edit button of an existing note to update");
         }
     }
-    
+
     const handleSearch = () => {
-        if(editingMode === true){
+        if (editingMode === true) {
             alert("Click 'Update' button to update the note first");
         }
         else if (input === "") {
