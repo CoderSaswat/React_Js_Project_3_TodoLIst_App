@@ -25,25 +25,25 @@ const App = () => {
             alert("Click 'Update' button to update the note first");
         }
         else if (input) {  //if input value should not be empty
-            setItems([...items, input]) //trickyy
+            setItems([...items, input]); //trickyy
             setInput("");
         }
         else {
-            alert("Enter something to insert");
+            alert("Please enter a note to insert");
         }
     }
 
     const handleDelete = (ele) => {
         const index = items.indexOf(ele);
         if (index > -1) {
-            items.splice(index, 1)
+            items.splice(index, 1);
         }
         setItems([...items]);
     }
 
     const handleDeleteAll = (items) => {
         if (items.length === 0) {
-            alert("You have no notes to delete");
+            alert("You don't have any notes to delete");
         }
         else {
             items = [];
@@ -66,7 +66,7 @@ const App = () => {
             setInput("");
         }
         else {
-            alert("Click on edit button of an existing note to update");
+            alert("Click 'edit' button of an existing note to update");
         }
     }
 
@@ -82,10 +82,10 @@ const App = () => {
                 return ele.includes(input);
             })
             if (searchObj.length !== 0) {
-                alert("Found Notes --> " + searchObj);
+                alert("Notes found--> " + searchObj);
             }
             else {
-                alert("No Notes Found")
+                alert("No Notes Found");
             }
         }
     }
